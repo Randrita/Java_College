@@ -2,24 +2,30 @@ package com.randrita.week2;
 //7.Write a Java program to print an American flag on the screen.
 
 public class AmericanFlag {
+    String p1, p2;
 
     public static void main(String[] args) {
-        String p2 = "==============================================";
+
         AmericanFlag s = new AmericanFlag();
-        AmericanFlag s1 = new AmericanFlag(p2);
+        s.display();
 
     }
 
-    AmericanFlag(){
-        String p1 = "* * * * * * ==================================\n* * * * * * ==================================";
-        for(int i=0;i<4;i++){
+    AmericanFlag() {
+        p1 = "* * * * * * ==================================\n* * * * * * ==================================";
+        p2 = "==============================================";
+
+    }
+
+
+    void display() {
+        for (int i = 0; i < 4; i++) {
             System.out.println(p1);
-        }
-    }
 
-    AmericanFlag(String p2){
-        for(int i=0;i<6;i++){
-            System.out.println(p2);
+            for (int j = 0; i < 6; i++) {
+                System.out.println(p2);
+            }
+
         }
     }
 }
