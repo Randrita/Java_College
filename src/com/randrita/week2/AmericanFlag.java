@@ -8,6 +8,7 @@ public class AmericanFlag {
 
         AmericanFlag s = new AmericanFlag();
         s.display();
+        s.display1();
 
     }
 
@@ -19,13 +20,17 @@ public class AmericanFlag {
 
 
     void display() {
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 2; i++) {
             System.out.println(p1);
 
-            for (int j = 0; i < 6; i++) {
-                System.out.println(p2);
-            }
 
+        }
+    }
+
+    void display1(){
+
+        for (int j = 0; j < 6; j++) {
+            System.out.println(p2);
         }
     }
 }
