@@ -9,21 +9,16 @@ public class AmericanFlag {
         AmericanFlag s = new AmericanFlag();
         s.display();
         s.display1();
-
     }
 
     AmericanFlag() {
         p1 = "* * * * * * ==================================\n* * * * * * ==================================";
         p2 = "==============================================";
-
     }
-
 
     void display() {
         for (int i = 0; i < 2; i++) {
             System.out.println(p1);
-
-
         }
     }
 
