@@ -10,9 +10,7 @@ public class OuterClass {
         void display(){
             System.out.println("The number defined in outerClass is "+ k);
         }
-
     }
-
     void show(){
         InnerClass inner = new InnerClass();
         inner.display();
